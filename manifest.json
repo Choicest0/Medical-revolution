@@ -1,0 +1,16 @@
+{
+  "name": "City General Hospital Portal",
+  "short_name": "Hospital Portal",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f4f6f9",
+  "theme_color": "#0056b3",
+  "description": "Emergency pre-admission, 29 medical departments, and doctor consultation portal.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2966/2966327.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
