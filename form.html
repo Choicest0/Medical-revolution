@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Pre-Admission Form - City General Hospital</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; }
+        header { background-color: #0056b3; color: white; padding: 20px; text-align: center; }
+        nav { display: flex; justify-content: center; background-color: #004085; padding: 10px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 600px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .btn { display: block; width: 100%; background: #28a745; color: white; padding: 12px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 20px; }
+        .btn:hover { background: #218838; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>City General Hospital</h1>
+        <p>Online Patient Pre-Admission Portal</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Admission Form</a>
+    </nav>
+
+    <div class="container">
+        <h2>Patient Admission Form</h2>
+        <form onsubmit="alert('Pre-admission form submitted successfully! Our team will contact you shortly.'); return false;">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Enter patient's full name">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required placeholder="Enter age">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Contact Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="department">Preferred Department / Ward:</label>
+                <select id="department" name="department">
+                    <option value="emergency">Emergency Care</option>
+                    <option value="icu">Intensive Care Unit (ICU)</option>
+                    <option value="general">General Ward</option>
+                    <option value="pediatrics">Pediatrics</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symptoms">Brief Description of Symptoms / Reason for Admission:</label>
+                <textarea id="symptoms" name="symptoms" rows="4" placeholder="Describe medical condition or symptoms"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Admission Form</button>
+        </form>
+    </div>
+
+</body>
+</html>
