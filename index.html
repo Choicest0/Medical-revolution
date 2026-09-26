@@ -6,59 +6,111 @@
     <title>City General Hospital - Portal</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; }
-        header { background-color: #0056b3; color: white; padding: 20px; text-align: center; }
-        nav { display: flex; justify-content: center; background-color: #004085; padding: 10px; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        header { background-color: #0056b3; color: white; padding: 25px; text-align: center; }
+        nav { display: flex; justify-content: center; background-color: #004085; padding: 12px; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; margin: 5px 15px; font-weight: bold; font-size: 14px; }
         nav a:hover { text-decoration: underline; }
-        .hero { text-align: center; padding: 40px 20px; background: white; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .btn { display: inline-block; background-color: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px; margin-top: 15px; }
         .btn:hover { background-color: #218838; }
-        .container { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .facilities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .facilities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
         .facility-card { background: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #0056b3; }
     </style>
 </head>
 <body>
 
-    <!-- Top Banner / Button Section -->
+    <!-- Top Emergency / Pre-Admission Banner -->
     <div style="background-color: #e9ecef; text-align: center; padding: 15px;">
-        <h3 style="margin: 0 0 5px 0;">Ready for Pre-Admission?</h3>
-        <p style="margin: 0 0 10px 0; font-size: 14px;">Save time at the hospital by filling out our online form in advance.</p>
-        <a href="form.html" class="btn" style="margin-top: 0; padding: 8px 16px; font-size: 14px;">Fill Admission Form</a>
+        <h3 style="margin: 0 0 5px 0;">Medical Revolution - Emergency Pre-Admission</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px;">Skip long paperwork lines at the hospital by filling out our online form instantly.</p>
+        <a href="form.html" class="btn" style="margin-top: 0; padding: 8px 16px; font-size: 14px;">Fill Admission Form Now</a>
     </div>
 
     <header>
         <h1>City General Hospital Portal</h1>
-        <p>Providing compassionate care and advanced medical services</p>
+        <p>Comprehensive Healthcare, Advanced Technology, and 24/7 Patient Support</p>
     </header>
 
+    <!-- Navigation Menu (Ready for additional files like doctors.html or contact.html) -->
     <nav>
         <a href="index.html">Home</a>
-        <a href="#facilities">Facilities</a>
+        <a href="#medical">Medical Services</a>
+        <a href="#support">Support & Amenities</a>
+        <a href="#emergency">Emergency & Blood Bank</a>
+        <a href="#location">Location & Contact</a>
         <a href="form.html">Admission Form</a>
     </nav>
 
     <div class="container">
-        <h2>Welcome to Our Patient Portal</h2>
-        <p>Our goal is to streamline your hospital visit. You can check our available facilities below or proceed to fill out your pre-admission form to save time upon arrival.</p>
+        <h2>Welcome to Our Healthcare Network</h2>
+        <p>Our goal is to revolutionize hospital visits by cutting down wait times and providing complete visibility into our facilities and support services right from your device.</p>
         
-        <!-- Second Connected Button -->
-        <a href="form.html" class="btn">Fill Pre-Admission Form</a>
+        <!-- Connected Main Button -->
+        <a href="form.html" class="btn">Proceed to Pre-Admission Form</a>
 
-        <h2 id="facilities" style="margin-top: 40px;">Our Facilities</h2>
+        <!-- CORE MEDICAL FACILITIES -->
+        <h2 id="medical" style="margin-top: 40px;">Core Medical & Clinical Services</h2>
         <div class="facilities-grid">
             <div class="facility-card">
-                <h3>24/7 Emergency Care</h3>
-                <p>Fully equipped trauma center with rapid response teams available around the clock.</p>
+                <h3>24/7 Emergency & Trauma Care</h3>
+                <p>Fully equipped trauma units with dedicated critical care specialists and rapid-response teams.</p>
             </div>
             <div class="facility-card">
-                <h3>Advanced ICU</h3>
-                <p>State-of-the-art intensive care units with continuous patient monitoring systems.</p>
+                <h3>Advanced ICU & Operation Theaters</h3>
+                <p>State-of-the-art intensive care units with continuous digital patient monitoring and modular OTs.</p>
             </div>
             <div class="facility-card">
-                <h3>Diagnostics & Lab</h3>
-                <p>In-house pathology, digital X-rays, MRI, and CT scan services for quick reports.</p>
+                <h3>Diagnostics, MRI & Pathology Lab</h3>
+                <p>In-house 3T MRI, CT scan, digital X-ray, ultrasound, and full-spectrum automated blood testing.</p>
             </div>
+            <div class="facility-card">
+                <h3>Inpatient Wards & Private Rooms</h3>
+                <p>Spacious general wards, twin-sharing rooms, and deluxe private suites for optimal recovery.</p>
+            </div>
+        </div>
+
+        <!-- SUPPORT & AMENITIES -->
+        <h2 id="support" style="margin-top: 40px;">Patient Support & Hospital Amenities</h2>
+        <div class="facilities-grid">
+            <div class="facility-card" style="border-left-color: #28a745;">
+                <h3>24/7 Ambulance & Transport Service</h3>
+                <p>Advanced life-support (ALS) and basic life-support (BLS) ambulances available for safe patient transit.</p>
+            </div>
+            <div class="facility-card" style="border-left-color: #28a745;">
+                <h3>Hospital Canteen & Cafeteria</h3>
+                <p>Hygienic multi-cuisine dining area providing nutritious meals and beverages for patients, staff, and visitors.</p>
+            </div>
+            <div class="facility-card" style="border-left-color: #28a745;">
+                <h3>Night Stay & Attendant Rooms</h3>
+                <p>Comfortable lodging lounges and family resting rooms designed for attendants staying overnight.</p>
+            </div>
+            <div class="facility-card" style="border-left-color: #28a745;">
+                <h3>In-House Pharmacy & Medical Store</h3>
+                <p>Round-the-clock licensed pharmacy stocked with all prescription medications, surgical goods, and supplies.</p>
+            </div>
+        </div>
+
+        <!-- EMERGENCY & SPECIAL SERVICES -->
+        <h2 id="emergency" style="margin-top: 40px;">Emergency Services & Blood Bank</h2>
+        <div class="facilities-grid">
+            <div class="facility-card" style="border-left-color: #dc3545;">
+                <h3>24/7 Blood Bank & Storage</h3>
+                <p>Licensed blood bank facility providing safe blood components (plasma, platelets, packed cells) on demand.</p>
+            </div>
+            <div class="facility-card" style="border-left-color: #dc3545;">
+                <h3>Oxygen Plant & Life Support</h3>
+                <p>Dedicated medical gas pipeline network supplying uninterrupted high-purity oxygen directly to all beds.</p>
+            </div>
+        </div>
+
+        <!-- LOCATION & CONTACT -->
+        <h2 id="location" style="margin-top: 40px;">Hospital Location & Contact Information</h2>
+        <div class="facility-card" style="border-left-color: #ffc107;">
+            <h3>City General Hospital Central Campus</h3>
+            <p><strong>Address:</strong> 123 Healthcare Boulevard, Medical District, City Center</p>
+            <p><strong>Emergency Ambulance Hotline:</strong> +1 (555) 911-HELP / 108</p>
+            <p><strong>Helpdesk / Inquiry Desk:</strong> +1 (555) 321-CARE</p>
+            <p><strong>Visiting Hours:</strong> Morning: 10:00 AM – 1:00 PM | Evening: 5:00 PM – 8:00 PM</p>
         </div>
     </div>
 
